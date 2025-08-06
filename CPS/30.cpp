@@ -5,20 +5,28 @@
 
 int main(){
     //freopen("Input.txt","rt",stdin);
+    int lt, cur, rt, k;
+    //k : 현재 자리 수
+    lt=-1;
+    k=1;
     int n;
     scanf("%d",&n);
-    int i=3;
-    int count=0;
-    while(i<=n){
-        int t=i;
-        while(t>1){
-            if(t%10==3) count++;
-            t/=10;
+    int result=0;
+    while(lt!=0){
+        lt=n/(k*10);
+        cur=(n/k)%10;
+        rt=n%k;
+        
+        if(cur==3){
+            result+=(lt*k)+rt+1;
         }
-        i++;
+        else if(cur>3){
+            result+=(lt+1)*k;
+        }
+        else result+=(lt*k);
+        k*=10;
     }
-    printf("%d",count);
-
+    printf("%d",result);
     return 0;
 
 }
