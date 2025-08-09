@@ -12,7 +12,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/AA.exe"
             ],
             "group": "build",
             "problemMatcher": [
@@ -33,7 +33,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/AA.exe"
             ],
             "group": "build",
             "problemMatcher": [
@@ -46,7 +46,7 @@
         {
             "label": "execute",
             "type": "shell",
-            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "command": "${fileDirname}/AA.exe",
             "group": {
                 "kind": "test",
                 "isDefault": true
@@ -66,7 +66,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\AA.exe"
             ],
             "options": {
                 "cwd": "C:\\mingw64\\bin"
