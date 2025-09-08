@@ -20,7 +20,7 @@
 ## ✍️ Velog 블로그 링크
 
 풀이 요약 및 회고는 Velog에서 확인하실 수 있습니다.  
-👉 [https://velog.io/@yourname](https://velog.io/@yourname)](https://velog.io/@zzmnxn/series/BOJ)
+👉[(https://velog.io/@zzmnxn)](https://velog.io/@zzmnxn/series/BOJ)
 
 ---
 
