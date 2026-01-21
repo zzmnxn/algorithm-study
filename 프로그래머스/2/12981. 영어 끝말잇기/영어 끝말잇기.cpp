@@ -15,7 +15,7 @@ vector<int> solution(int n, vector<string> words) {
     int idx=-1;
     //if(words[0].length() == 1) idx=0;
     for(int i=1; i< words.size();i++){
-        if(used.count(words[i]) || words[i].length()==1) {
+        if(used.count(words[i]) || words[i].length()==1) { //문제 조건 꼼꼼하게 보기
             idx=i;
             break;
         }
@@ -23,7 +23,7 @@ vector<int> solution(int n, vector<string> words) {
             idx=i;
             break;
         }     
-        used.insert(words[i]);
+        used.insert(words[i]); //또 증가 조건 빼먹음 !!!!!! 
     }
     if(words[0].length() == 1) idx=0;
     if(idx!= -1){
